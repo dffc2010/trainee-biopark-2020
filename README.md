@@ -19,6 +19,7 @@ problemas, basta indicar o caminho para localizar o driver: o driver mysql-conne
 	4.9 Na tela seguinte, mude o nome do banco de dados para "agendamento", preencha as outras informações conforme a configuração do seu banco de dados [usuário, 
 porta etc] e clique em Próximo;
 		4.9.1 Se houver uma mensagem de erro relacionada à Time Zone, rode o seguinte comando no MySQL Workbench: SET @@global.time_zone = '+3:00';
+	4.10 Aparecerá um novo ícone na aba Serviços / Banco de Dados representando o driver recém adicionado. Clique em cima deste ícone com o botão direito do mouse e em seguida selecione "Conectar";
 5. Dentro do projeto, no pacote AgendamentoDAO, na classe ConnectionFactory.java, modifique o valor da variável PASSWORD [linha 12], que deverá conter a senha do 
 seu banco de dados e também da variável USERNAME [linha 9], que deverá conter o seu usuário do banco de dados;
 6. Rode o projeto no Netbeans;
